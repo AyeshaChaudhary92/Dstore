@@ -1,0 +1,28 @@
+<products>
+    <product>
+        <id>1</id>
+        <name>Bodycon </name>
+        <price>200.00</price>
+        <image>women-product-img/bodycon.jpg</image>
+    </product>
+    <product>
+        <id>2</id>
+        <name> Pink Gown</name>
+        <price>250.00</price>
+        <image>women-product-img/dress11.jpg</image>
+    </product>
+    <product>
+        <id>3</id>
+        <name>  Party Dress</name>
+        <price>55.00</price>
+        <image>women-product-img/dres14.jpg</image>
+    </product>
+    <product>
+        <id>4</id>
+        <name>Black Dress</name>
+        <price>35.00</price>
+        <image>women-product-img/dress6.jpg</image>
+    </product>
+    
+</products>
+

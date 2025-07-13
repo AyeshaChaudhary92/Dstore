@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Clothing Store - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="women-product-img/favicon.png">
+   
+   <!-- Font Awesome for cart icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+
+
+<!-- Header Start -->
+<header class="site-header">
+    <!-- 🔸 Centered Group: Logo + Title + Nav -->
+    <div class="header-center-area">
+        <img src="women-product-img/logo.jpg" alt="Store Logo" class="logo">
+        <h1 class="store-title">Dragon Beast</h1>
+
+        <nav class="nav-center">
+            <a href="index.html">HOME</a>
+            <a href="MEN.html">MEN</a>
+            <a href="women.html">WOMEN</a>
+        </nav>
+ 
+  </div>
+
+    <div class="header-right">
+      <a href="#"><img src="women-product-img/magnifying-glass.png" alt="Search" class="Search-icon"></a>
+     <a href="cart.html" id="cart-icon">
+    
+  <img src="women-product-img/shopping-bag.png" alt="Cart" class="cart-icon">
+</a>
+
+
+
+
+
+ </div>
+</header>
+<!-- Header End -->
+ 
+
+
+    <!-- Main Products Section -->
+    
+<div class="banner-image">
+    <img src="women-product-img/banner.png" alt="Clothing Store Banner">
+</div>
+
+<!-- Headings Section Start -->
+<section class="heading-section">
+    <h1> Elegant Dresses for Every Occasion</h1>
+    <h4>Whether you’re dressing up for a wedding,
+         heading to work, or planning a brunch with 
+        friends — our collection offers timeless
+        elegance with modern designs. Crafted to 
+        flatter every body type and mood.</h4>
+    </section>
+<!-- Headings Section End -->
+
+
+
+<section id="xml-products" class="product-row-container">
+  <!-- XML products from products.xml will be loaded here -->
+</section>
+
+
+
+<!-- Main Products Section -->
+    <main id="products">
+  <!-- XML products will be loaded here -->
+</main>
+
+    <!-- Promotional Image Banner After Products -->
+
+
+
+    <!-- 🔹 SECOND Banner -->
+<section class="after-products-banner">
+  <a href="MEN.html" class="banner-link">
+    <img src="men-products-img/bannerimg.png" alt="Promotional Banner" class="fade-in" />
+    <div class="cta-overlay">
+      <button class="cta-button">Shop Now</button>
+    </div>
+  </a>
+</section>
+
+
+
+
+
+<!-- Main Products Section -->
+<section class="heading-section">
+    <h1> Classic Styles. Modern Fit</h1>
+    <h4>Discover premium-quality clothing
+         crafted for style, comfort, and 
+         confidence. From tailored shirts
+          to casual essentials — redefine 
+          your wardrobe with timeless men’s 
+          fashion.
+
+</h4>
+    </section>
+
+
+
+
+
+
+<!-- 🔹 Products after Second Banner -->
+<section id="women-products" class="product-container">
+  <!-- Next 4 products will load here -->
+</section>
+
+<!-- ✅ Product Section after 2nd banner -->
+<section class="product-container">
+  <!-- Product 1 -->
+  <div class="product-card">
+    <a href="product.html">
+      <img src="men-products-img/shirt14.webp" alt="Elegant Dress">
+      <h3>White Shirt</h3>
+      <p>$45.00</p>
+    </a>
+<button onclick="addToCart('Shirt', 45)">Add to Cart</button>
+  </div>
+
+  <!-- Product 2 -->
+  <div class="product-card">
+    <a href="product.html">
+      <img src="men-products-img/shirt13.webp" alt="Royal Blue Gown">
+      <h3>Lineing Shirt</h3>
+      <p>$60.00</p>
+    </a>
+<button onclick="addToCart('Shirt', 45)">Add to Cart</button>
+  </div>
+
+  <!-- Product 3 -->
+  <div class="product-card">
+    <a href="product.html">
+      <img src="men-products-img/shirt12.webp" alt="Maroon Bodycon">
+      <h3>off shirt</h3>
+      <p>$35.00</p>
+    </a>
+<button onclick="addToCart('Shirt', 35)">Add to Cart</button>
+  </div>
+
+  <!-- Product 4 -->
+  <div class="product-card">
+    <a href="product.html">
+      <img src="men-products-img/shirt16.webp" alt="Casual Floral Dress">
+      <h3>Shirt</h3>
+      <p>$40.00</p>
+    </a>
+<button onclick="addToCart('Shirt', 45)">Add to Cart</button>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<!-- Headings Section End -->
+
+    <!-- Footer Start -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>About Us</h4>
+                <p>Dragon Beast is your one-stop shop for trendy fashion and accessories. Shop with confidence and style!</p>
+            </div>
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="MEN.html">Men</a></li>
+                    <li><a href="women.html">Women</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                   
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contact</h4>
+                <p>Email: support@dragonbeast.com</p>
+                <p>Phone: +92-123-4567890</p>
+                <p>Location: Sialkot, Pakistan</p>
+            </div>
+            <div class="footer-column">
+                <h4>Help</h4>
+                <ul>
+                    <li><a href="FAQ">FAQ</a></li>
+                    <li><a href="Delivery Information">Delivery Information</a></li>
+                    <li><a href="Returns Policy">Returns Policy</a></li>
+                    <li><a href="Orders">Orders</a></li>
+                    <li><a href="Submit a Fake">Submit a Fake</a></li>
+                </ul>
+            </div>
+
+          
+
+
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Dragon Beast. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+
+
+</body>
+</html>
+
+<script>
+function addToCart(name, price) {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  const existing = cart.find(item => item.name === name);
+  if (existing) {
+    existing.quantity += 1;
+  } else {
+    cart.push({ name, price, quantity: 1 });
+  }
+
+  localStorage.setItem("cart", JSON.stringify(cart));
+  alert(`${name} added to cart!`);
+}
+</script>
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  loadXMLProducts();
+});
+
+function loadXMLProducts() {
+  fetch("products.xml")
+    .then(response => response.text())
+    .then(data => {
+      const parser = new DOMParser();
+      const xml = parser.parseFromString(data, "application/xml");
+      const products = xml.getElementsByTagName("product");
+
+      const container = document.getElementById("xml-products");
+      container.innerHTML = ""; // clear before adding new
+
+      for (let i = 0; i < products.length; i++) {
+        const name = products[i].getElementsByTagName("name")[0].textContent;
+        const price = products[i].getElementsByTagName("price")[0].textContent;
+        const image = products[i].getElementsByTagName("image")[0].textContent;
+
+        const productCard = `
+          <div class="product-card">
+            <img src="${image}" alt="${name}">
+            <h3>${name}</h3>
+            <p>$${parseFloat(price).toFixed(2)}</p>
+            <button onclick="addToCart('${name}', ${parseFloat(price)})">Add to Cart</button>
+          </div>
+        `;
+
+        container.innerHTML += productCard;
+      }
+    })
+    .catch(error => console.error("Failed to load XML products:", error));
+}
+</script>
+
+
+
+

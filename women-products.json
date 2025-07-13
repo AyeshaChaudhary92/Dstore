@@ -1,0 +1,51 @@
+[
+    {
+        "id": "w1",
+        "name": "Bodycon ",
+        "price": 39.99,
+        "image": "women-product-img/bodycon.jpg"
+    },
+    {
+        "id": "w2",
+        "name": "Party Dress",
+        "price": 49.99,
+        "image": "women-product-img/dres14.jpg"
+    },
+    {
+        "id": "w3",
+        "name": "Black Dress",
+        "price": 29.99,
+        "image": "women-product-img/dress6.jpg"
+    },
+    {
+        "id": "w4",
+        "name": "Pink Gown",
+        "price": 59.99,
+        "image": "women-product-img/dress11.jpg"
+    },
+    {
+        "id": "w5",
+        "name": "Night Event",
+        "price": 34.99,
+        "image": "women-product-img/dress8.jpg"
+    },
+    {
+        "id": "w6",
+        "name": "Casual Top",
+        "price": 24.99,
+        "image": "women-product-img/dress.jpg"
+    },
+    {
+        "id": "w7",
+        "name": "Light Fancy Dress",
+        "price": 24.99,
+        "image": "women-product-img/dres.jpg"
+    },
+    {
+        "id": "w8",
+        "name": " Formal Dress",
+        "price": 24.99,
+        "image": "women-product-img/deres.jpg"
+    }
+]
+    

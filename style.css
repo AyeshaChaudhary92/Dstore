@@ -1,0 +1,786 @@
+/* === General Body Styling === */
+body {
+    font-family: 'Segoe UI', 'Times New Roman', Times, serif, 'Geneva', Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* For sticky footer */
+}
+
+/* === Header Section === */
+header {
+    background-color: hsl(0, 0%, 100%);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 1px 6px;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Header shadow */
+}
+
+/* Navigation Links (Top Menu) */
+nav a {
+    color: rgb(5, 0, 0);
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Store Logo Style */
+.logo {
+    width: 80px;
+    height: 50px;
+    border-radius: 50%; /* Make logo circular */
+    margin-right: 10px;
+}
+
+
+
+
+/* Icons and login (right side) */
+.nav-right a {
+  margin:  5px;
+  text-decoration: none;
+  color: #000000;
+  font-size: 14px;
+}
+
+/* Cart icon styling */
+.cart-icon {
+  width: 20px;
+  vertical-align: right ;
+
+}
+
+
+.Search-icon{
+  width: 15px;
+  vertical-align: right;
+   
+}
+
+
+
+/* ✅ Ensure First 4 XML Products Are in a Row */
+.product-row-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrap on smaller screens */
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+
+/* ==== XML Product Layout - 4 in a Row ==== */
+.xml-products-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 40px 20px;
+  flex-wrap: wrap; /* Makes it responsive */
+}
+
+.xml-product-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  width: 250px;
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.xml-product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+.xml-product-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+.xml-product-card h3 {
+  margin: 15px 0 5px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #111;
+}
+
+.xml-product-card .price {
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.xml-product-card button {
+  background: #111;
+  color: #fff;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.xml-product-card button:hover {
+  background: #333;
+}
+.xml-product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  /* Pushes button to bottom */
+  height: 500px; /* Or adjust height to fit image size */
+  padding: 20px;
+  background: #fff;
+  width: 290px;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+
+
+
+
+
+/* === Women Products Grid Layout (XML Style) === */
+#womenProducts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 0px 10px;
+  background-color: #fdfdfd;
+}
+
+/* === Women Product Card - same as xml-product-card === */
+#womenProducts .product {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  min-height: 500px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  text-align: center;
+  transition: all 0.3s ease;
+  padding-bottom: 20px;
+}
+
+
+#womenProducts .product:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.15);
+}
+
+/* === Women Product Image === */
+#womenProducts .product img {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* Or 'cover' if you want stylish crop */
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* === Product Name === */
+#womenProducts .product h3,
+#womenProducts .product strong {
+  font-size: 18px;
+  margin-top: 15px;
+  font-weight: 600;
+  color: #111;
+}
+
+/* === Price Text === */
+#womenProducts .product p {
+  font-size: 16px;
+  color: #555;
+  margin: 5px 0 15px;
+}
+
+/* === Add to Cart Button === */
+#womenProducts .product button {
+  background-color: #111;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: auto;
+  transition: background 0.3s ease;
+}
+
+#womenProducts .product button:hover {
+  background-color: #333;
+}
+
+
+
+
+
+/* ==== MEN PRODUCTS MODERN LAYOUT ==== */
+
+#menProducts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px 20px;
+  background-color: #f8f8f8;
+}
+
+/* Modern Product Card */
+#menProducts .product {
+  width: 290px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+#menProducts .product:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+#menProducts .product img {
+  width: 100%;
+  height: 350px;
+
+  border-bottom: 1px solid #eee;
+}
+
+/* Product Name */
+#menProducts .product h3 {
+  font-size: 18px;
+  color: #111;
+  margin: 15px 0 5px;
+  font-weight: 600;
+}
+
+/* Product Price */
+#menProducts .product p {
+  font-size: 16px;
+  color: #333;
+  margin: 5px 0 15px;
+}
+
+/* Add to Cart Button */
+#menProducts .product button {
+  margin-top: auto;
+  background: linear-gradient(to right, #111, #333);
+  color: #ffffff;
+  border: none;
+  padding: 11px 20px;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 60px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#menProducts .product button:hover {
+  background: linear-gradient(to right, #333, #000);
+}
+
+
+
+
+
+
+/* === Footer Section === */
+.site-footer {
+    background-color: #222;
+    color: #ccc;
+    padding: 40px 20px 20px 20px;
+    font-size: 14px;
+    
+    margin-top: auto; /* Push footer to bottom if content is short */
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-column {
+    flex: 1 1 250px;
+    margin: 10px;
+}
+
+.footer-column h4 {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #736f6f;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #202020;
+    padding-top: 10px;
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+/* === Footer Responsive for Mobile === */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-column {
+        margin: 20px 0;
+    }
+}
+
+/* === Header Right Section (For Cart Icon or Links) === */
+.header-right {
+    display: flex;
+    gap: 30px;
+}
+
+.header-right a {
+    color: rgb(37, 37, 37);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+/* Header Responsive for Mobile */
+@media (max-width: 768px) {
+    .site-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-center,
+    .header-right {
+        margin-top: 1px;
+    }
+}
+
+
+/* === Sticky Header with Flex Layout === */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 20px;
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Logo */
+.logo img {
+  height: 50px;
+}
+
+/* Center Navigation */
+.nav-center {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  gap: 30px;
+}
+
+.nav-center a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* Cart on far Right */
+.header-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-shrink: 0;
+}
+
+.cart-icon-img {
+   width: 30px; /* 🔽 Smaller icon */
+  height: auto;
+  margin-left: 19px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.cart-icon-img:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+
+.banner-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+/* === Heading Section Styling - FINAL FIX === */
+.heading-section {
+    background-color: #f9f9f9;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.heading-section h1 {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 36px;
+    color: #000000;
+    margin: 0 1 8px 0;  /* Tight space under h1 */
+}
+
+.heading-section h4 {
+    font-family: 'time', 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #565656;
+    margin: 0;
+    line-height: 1.4;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    padding: 5px 10px;
+    margin: 2px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+/* Banner Section */
+.after-products-banner {
+  width: 100%;
+  display: block;
+  position: relative;
+  margin-top: 40px;
+}
+
+.after-products-banner img {
+  width: 100%;               /* 👈 Makes it full width */
+  height: auto;              /* 👈 Keeps aspect ratio */
+  display: block;            /* 👈 Removes white gaps */
+  border-radius: 19px;       /* Optional for rounded edges */
+}
+
+
+.after-products-banner img.fade-in {
+  animation: fadeIn 1.5s forwards;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* CTA Button Overlay */
+.cta-overlay {
+  position: absolute;
+   bottom: 8%;       
+  left: 18%;
+  transform: translate(-50%, -50%);
+}
+
+.cta-button {
+  background-color: #710505ce;
+  color: #fff;
+  font-size: 19px;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  left: 50%;
+  bottom: 18%; /* Adjust this to position under "Dragon Beast" */
+padding: 14px 28px;
+
+
+}
+
+.cta-button:hover {
+  background-color: #4b04047b;
+}
+
+/* Ensure link doesn't remove styles */
+.banner-link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+
+
+
+.product-container {
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  background-color: #f9f9f9;
+}
+
+.product-card {
+  background: #fff;
+  width: 200px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+
+
+
+
+
+
+
+/* ✅ Product Container Layout */
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+  background-color: #f8f8f8;
+}
+
+
+
+/* ✅ Branded Product Card */
+.product-card {
+  width: 290px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease;
+  padding-bottom: 50px;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* ✅ Product Image */
+.product-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ✅ Product Info */
+.product-card h3 {
+  font-size: 18px;
+  margin: 15px 0 5px;
+  color: #0c0c0c;
+  font-weight: 600;
+}
+
+.product-card p {
+  font-size: 17px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+/* ✅ Add to Cart Button – Branded Style */
+.product-card button {
+  background: linear-gradient(to right, #131212, #302a29); /* Pink → Orange */
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 5px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.product-card button:hover {
+  background: linear-gradient(to right, #411313, #3a121c);
+}
+
+
+
+
+
+
+
+
+
+
+/* === Banner Styling === */
+.women-banner {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.women-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+/* === Products Section === */
+#womenProducts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #fdfdfd;
+}
+
+/* === Individual Product Card === */
+.product {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product button:hover {
+    background-color: #c2185b;
+}
+
+
+
+
+
+
+
+/* === Description Section Styling === */
+.women-description {
+    text-align: center;
+    max-width: 900px;
+    margin: 40px auto 20px auto;
+    padding: 0 20px;
+}
+
+.women-description h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+    font-family: 'Georgia', serif;
+}
+
+.women-description p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+    font-family: 'Segoe UI', sans-serif;
+}

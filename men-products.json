@@ -1,0 +1,51 @@
+[
+  {
+    "id": "m1",
+    "name": "Men's Black Shirt",
+    "price": 60.00,
+    "image": "men-products-img/men2.jpg",
+    "category": "Shirts"
+  },
+  {
+    "id": "m2",
+    "name": "Men's Blue Shirt",
+    "price": 65.00,
+    "image": "men-products-img/men1.jpg",
+    "category": "Shirts"
+  },
+  {
+    "id": "m3",
+    "name": "Men's Brown Shirt",
+    "price": 55.00,
+    "image": "men-products-img/men3.jpg",
+    "category": "Shirts"
+  },
+  {
+    "id": "m4",
+    "name": "Men's Baige Shirt",
+    "price": 40.00,
+    "image": "men-products-img/men6.jpg",
+    "category": "Jackets"
+  },
+  {
+    "id": "m5",
+    "name": "Men's Black Shirt",
+    "price": 70.00,
+    "image": "men-products-img/men8.webp",
+    "category": "Shirts"
+  },
+  {
+    "id": "m6",
+    "name": "Men's Baggy Shirt",
+    "price": 75.00,
+    "image": "men-products-img/men9.jpg",
+    "category": "Shirts"
+  },
+  {
+    "id": "m7",
+    "name": "Men's Brown Shirt",
+    "price": 80.00,
+    "image": "men-products-img/men0.jpg",
+    "category": "Shirts"
+  }
+]
