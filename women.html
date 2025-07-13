@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Women's Collection - My Clothing Store</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="women-product-img/favicon.png">
+ 
+   <!-- Font Awesome for cart icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+
+
+
+<header>
+    <h1>Women's Clothing Collection</h1>
+    <nav>
+        <a href="index.html">HOME</a>
+         <a href="MEN.html">MEN</a>
+        <a href="women.html">WOMEN</a>
+
+     <!-- Cart Icon right -->
+    <div class="header-right">
+    <a href="cart.html">
+      <img src="women-product-img/shopping-bag.png" alt="Cart" class="cart-icon-img">
+    </a>
+  </div>
+    </nav>
+<div class="women-banner">
+    <img src="women-product-img/banner2.png" alt="Women's Fashion Banner">
+</div>
+<section class="women-description">
+    <h2>Discover Elegance in Every Stitch</h2>
+    <p>
+        Fashion is more than clothing — it’s your story.
+       Dress to express with styles that inspire and empower.
+       Your confidence, your charm — your way.
+    </p>
+</section>
+
+</header>
+
+<main id="womenProducts">
+   
+     <!-- Women's Products will load json-->
+
+</main>
+    <script src="script.js"></script>
+
+
+<footer>
+    <footer>
+    
+
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h4>About Us</h4>
+            <p>Dragon Beast is your one-stop shop for trendy fashion and accessories. Shop with confidence and style!</p>
+        </div>
+        <div class="footer-column">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="MEN.html">Men</a></li>
+                <li><a href="women.html">Women</a></li>
+            
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Contact</h4>
+            <p>Email: support@dragonbeast.com</p>
+            <p>Phone: +92-123-4567890</p>
+            <p>Location: Sialkot, Pakistan</p>
+        </div>
+        <div class="footer-column">
+            <h4>Help</h4>
+            <ul>
+                <li><a href="FAQ">FAQ</a></li>
+                <li><a href="Delivery Information">Delivery Information</a></li>
+                <li><a href="Returns Policy">Returns Policy</a></li>
+                <li><a href="Orders">Orders</a></li>
+                <li><a href="Submit a Fake">Submit a Fake</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Dragon Beast. All rights reserved.</p>
+    </div>
+</footer>
+</footer>
+
+ <script>
+document.addEventListener("DOMContentLoaded", function() {
+    fetch('women-products.json')
+        .then(response => response.json())
+        .then(data => {
+            const section = document.getElementById('womenProducts');
+            data.forEach(product => {
+                const div = document.createElement('div');
+                div.className = "product";
+                div.innerHTML = `
+                    <img src="${product.image}" alt="${product.name}"><br>
+                    <strong>${product.name}</strong><br>
+                    Price: $${product.price}<br>
+                    <button onclick="addToCart('${product.id}', '${product.name}', '${product.price}')">Add to Cart</button>
+                `;
+                section.appendChild(div);
+            });
+        });
+});
+
+function addToCart(id, name, price) {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cart.push({ id, name, price });
+    localStorage.setItem('cart', JSON.stringify(cart));
+    alert(`${name} added to cart!`);
+}
+</script>
+</body>
+</html>
